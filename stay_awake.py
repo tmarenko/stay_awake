@@ -38,5 +38,7 @@ mouse_listener = mouse.Listener(on_move=activity_listener, on_click=activity_lis
 
 activity_thread = Thread(target=make_activity_thread)
 
-keyboard_listener.start() and mouse_listener.start()
-activity_thread.start() and activity_thread.join()
+keyboard_listener.start()
+mouse_listener.start()
+activity_thread.start()
+activity_thread.join()
